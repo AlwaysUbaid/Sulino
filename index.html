@@ -6,133 +6,174 @@
     <meta name="description" content="Sulino Bot - Solana Trading, Staking & Lottery Telegram Bot">
     <title>Sulino Bot - Your Solana Lottery Assistant</title>
     <style>
-        /* Reset some basic styling */
+        /* Reset and Basic Styling */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #1a1a2e;
+            color: #eaeaea;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
         }
 
         /* Hero Section */
         #hero {
-            background: linear-gradient(to right, #4caf50, #2196f3);
+            background: linear-gradient(145deg, #0f3460, #1a1a2e);
             color: white;
             text-align: center;
-            padding: 60px 20px;
+            padding: 80px 20px;
+            width: 100%;
         }
 
         #hero h1 {
             font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
         }
 
         #hero p {
-            font-size: 1.5rem;
-            margin: 20px 0;
+            font-size: 1.2rem;
+            margin: 10px 0 30px;
+            color: #a9b3d4;
         }
 
         .cta-button {
-            background-color: #fff;
-            color: #2196f3;
+            background-color: #00adb5;
+            color: white;
             padding: 12px 25px;
-            border-radius: 25px;
+            border-radius: 50px;
             font-size: 1.2rem;
             text-decoration: none;
+            transition: 0.3s;
         }
 
         .cta-button:hover {
-            background-color: #f1f1f1;
+            background-color: #007b82;
         }
 
-        /* Features Section */
-        #features {
+        /* Section Styling */
+        section {
             padding: 40px 20px;
-            background-color: #f9f9f9;
+            width: 90%;
+            max-width: 1200px;
             text-align: center;
         }
 
-        #features h2 {
-            margin-bottom: 20px;
-            font-size: 2.5rem;
+        section h2 {
+            font-size: 2rem;
+            color: #e3f2fd;
+            margin-bottom: 30px;
         }
 
+        /* Features Section */
         .feature-list {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: space-around;
+            gap: 20px;
         }
 
         .feature-item {
-            width: 45%;
-            margin: 10px;
-            background: white;
+            flex: 1 1 45%;
+            background: #16213e;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            text-align: left;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+            transition: 0.3s;
+        }
+
+        .feature-item:hover {
+            background: #1a1a2e;
+            transform: scale(1.05);
         }
 
         .feature-item h3 {
             font-size: 1.5rem;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            color: #00adb5;
         }
 
         /* How It Works Section */
-        #how-it-works {
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        #how-it-works h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-
         #how-it-works ol {
+            text-align: left;
             max-width: 600px;
             margin: 0 auto;
-            text-align: left;
+            color: #a9b3d4;
         }
 
         #how-it-works li {
-            margin: 10px 0;
+            margin: 15px 0;
             font-size: 1.2rem;
+            line-height: 1.6;
         }
 
         /* FAQs Section */
-        #faqs {
-            background-color: #f9f9f9;
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        #faqs h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-
         .faq-item {
-            max-width: 600px;
-            margin: 15px auto;
+            background: #16213e;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
             text-align: left;
+        }
+
+        .faq-item h3 {
+            font-size: 1.3rem;
+            color: #00adb5;
+        }
+
+        .faq-item p {
+            color: #a9b3d4;
+            font-size: 1rem;
+            line-height: 1.5;
         }
 
         /* Footer Section */
         footer {
-            background-color: #333;
+            background-color: #0f3460;
             color: white;
             padding: 20px;
             text-align: center;
+            width: 100%;
         }
 
         .social-links a {
-            color: #4caf50;
+            color: #00adb5;
             text-decoration: none;
-            margin: 0 10px;
+            margin: 0 15px;
+            transition: color 0.3s;
         }
 
         .social-links a:hover {
-            text-decoration: underline;
+            color: #007b82;
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            .feature-item {
+                flex: 1 1 100%;
+            }
+
+            #hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .feature-list {
+                gap: 10px;
+            }
+
+            .cta-button {
+                font-size: 1rem;
+                padding: 10px 20px;
+            }
         }
     </style>
 </head>
