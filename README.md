@@ -70,13 +70,3 @@ For any questions or suggestions, feel free to open an issue or connect with us 
 ### 📄 License
 
 This project is licensed under the MIT License.
-```
-
----
-
-### Explanation
-
-- **Link to the Telegram Bot**: Direct link to start using Sulino Bot on Telegram.
-- **Sections**: Provides an overview, feature list, instructions, and the tech stack used.
-- **Deployment Instructions**: Explains how to clone and view the website locally or host it online.
-- **Contact Information**: Points users to Telegram for direct support.
